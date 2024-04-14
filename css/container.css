@@ -1,0 +1,108 @@
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px ;
+    z-index: 1;
+    width: 1200px;
+  }
+  @media (min-width: 360px) {
+    .container {
+        width: 350px;
+    }
+  
+}
+  @media (min-width: 469px) {
+    .container {
+        width: 450px;
+    }
+}
+  @media (min-width: 569px) {
+    .container {
+        width: 450px;
+    }
+}
+  @media (min-width: 669px) {
+    .container {
+        width: 650px;
+    }
+   
+}
+
+/* ### Small Screen ### */
+@media (min-width: 769px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (max-width:765px) {
+    header {
+        background: #111;
+        transition: 0.8s ease-in-out;
+        position: relative;
+        z-index: 3;
+    }
+    
+    header .menu_icon {
+        display: block;
+        padding-right: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    header ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: -250px;
+        background-color: #111;
+        z-index: 2;
+        transition: 0.8s ease-in-out;
+    }
+    header ul.in {
+        top: 47px;
+        transition: 0.5s ease;
+    }
+    header ul a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        background-color: #111;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-bottom: 2px solid #222 ;
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+}
+/* ### Medium Screen ### */
+@media (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+}
+
+/* ### Large Screen  ### */
+@media (min-width: 1201px) {
+    .container {
+        width: 1200px;
+    }
+}
+/* ### Large Screen  ### */
+@media (min-width: 1301px) {
+    .container {
+        width: 1300px;
+    }
+}
+/* ### Large Screen  ### */
+@media (min-width: 1601px) {
+    .container {
+        width: 1600px;
+    }
+}

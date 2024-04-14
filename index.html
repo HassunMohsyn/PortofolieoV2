@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-init="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container.css">
+    <title></title>
+</head>
+<body>
+    <div class="controller" ng-controller="myCTR">
+    <header>
+        <h2 class="logo"><p>B<span>B</span></p>BlackBear</h2>
+        <ul>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Skills</li></a>
+            <a href="#"><li>Projects</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+        <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <div class="over_lay"></div>
+    <div class="about" id="about">
+    <div class="container">
+            <div class="contain">
+            <h1>Hi, Iam Hassun</h1>
+            <p>Web Developer</p>
+            <a href="#info"><i class="fa fa-angle-down"></i></a>
+        </div>
+        </div>
+    </div>
+        <div class="information" id="info">
+            <div class="container">
+                <h1 class="title">A Little Information for me</h1>
+                <div class="content">
+                <div class="image">
+                        <img src="images/me.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text">
+                    <h2>My name is Hassun Mohsen</h2>
+                    <p>I'm an <span>Egyptian</span> Web Developer<br>, I have a passion for creating intuitive, dynamic user experience. <br>I am a team player and a self-starter. I am constantly learning and improving my skills. <br> I am a fast learner and I am always looking for new challenges.</p>
+                    <a href="/Files/Doc1.pdf" class="button">Download My C.v</a>
+                </div>
+            </div>
+        </div>
+        <div class="Skills">
+            <h1 class="title">Skills</h1>
+            <div class="container">
+                <div class="skill" ng-repeat = "skill in skills">
+                    <i class="fa-brands fa-{{skill.name}}" style="color: {{skill.color}} "></i>
+                    <h5>{{skill.name}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="container">
+                <div class="project" ng-repeat="project in projects">
+                    <div class="over_lay">
+                        <span>{{project.des}}</span>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <img src="/images/proj/{{project.name}}.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <a href="{{contact.link}}" ng-repeat="contact in contacts"><i class="fa-brands fa-{{contact.name}}"></i></a>
+            </div>
+            <img src="/images/rocket12.png">
+            <p><i class="fa-regular fa-copyright"></i> Hassun Mohsyn 2024</p>
+        </div>
+    </div>
+    <script src="js/angularJs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
