@@ -72,6 +72,8 @@ header .menu_icon {
     height: 100vh;
     color: aliceblue;
     flex-direction: column;
+    position: relative;
+    z-index: 3;
 }
 .about .contain {
     position: relative;
