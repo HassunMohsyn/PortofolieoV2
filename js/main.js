@@ -52,7 +52,14 @@ if (document.querySelector(".about").style.top === "0") {
 
 console.log(document.querySelector(".information").style.top)
 
+let moreIcon = document.querySelectorAll(".projects .project .over_lay i")
 
+
+moreIcon.forEach((e)=> {
+    e.addEventListener('click', (img) => {
+        
+    })
+});
 
 // animation scroll
 
