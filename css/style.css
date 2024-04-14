@@ -64,18 +64,23 @@ header .menu_icon {
     display: none;
 }
 
-.about {
+.about .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     color: aliceblue;
+    flex-direction: column;
 }
 .about .contain {
     position: relative;
     z-index: 2;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .about .contain h1 {
@@ -88,7 +93,7 @@ header .menu_icon {
     font-size: 25px;
     font-weight: 200;
 }
-.about .contain i {
+.about .container a i {
     margin-top: 50px;
     font-size: 30px;
     color: rgba(240, 248, 255);
@@ -96,7 +101,7 @@ header .menu_icon {
     transition: 0.8s;
     cursor: pointer;
 }
-.about .contain i:hover {
+.about .container i:hover {
     opacity: 1;
 }
 @keyframes animate {
@@ -242,6 +247,7 @@ header .menu_icon {
     background-color: #111;
     min-height: 250px;
     gap: 25px;
+    padding: 20px 0;
     position: relative;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -255,17 +261,24 @@ header .menu_icon {
     margin: 0 10PX;
     text-align: center;
     border-radius: 5px;
+    /* background-color:{{}} */
+}
+.contact div a:hover {
+    /* background-color: {{$scope.contact.color}}; */
 }
 .contact img {
     margin: 10px 0;
 }
-.contact p {
+.contact .text_roket {
     color: #fff;
-    position: absolute;
-    bottom: 3px;
+}
+.contact p.copy {
+    color: #fff;
+    /* position: absolute; */
+    /* bottom: 3px; */
     font-weight: 100;
 }
-.contact p span {
+.contact p.copy span {
     border-radius: 50%;
     border: 1px solid #fff;
     padding: 5px;

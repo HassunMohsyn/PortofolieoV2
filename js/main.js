@@ -16,12 +16,26 @@ app.controller("myCTR",function ($scope) {
         {name:'my_page'},{name:'tamplate1'}]
 
     $scope.contacts=[
-        {name:'facebook',link:'#', color:'##3B5998'},
-        {name:'whatsapp',link:'#', color:''},
-        {name:'linkedin',link:'#', color:''},
-        {name:'github',link:'#', color:''},
+        {name:'facebook',link:'#', color:'#3B5998'},
+        {name:'whatsapp',link:'#', color:'#2ebd59'},
+        {name:'linkedin',link:'#', color:'#0077B5'},
+        {name:'github',link:'#', color:'#4183C4'},
     ]
 })
+let ContactBTN = document.querySelector(".contact div a");
+
+ContactBTN.addEventListener('hover',(e)=>{
+    e.style.background = `$scope.contacts.color`
+})
+
+// auto typed
+
+var typed = new Typed(".auto-type",{
+    strings: ["Web Developer","GUI Designer","Web Programming"],
+    typedSpeed: 250,
+    backSpeed:250,
+    loop:true
+});
 
 
 let menu_BTN = document.querySelector("header .menu_icon");
