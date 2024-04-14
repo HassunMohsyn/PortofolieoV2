@@ -16,7 +16,7 @@ app.controller("myCTR",function ($scope) {
         {name:'my_page'},{name:'tamplate1'}]
 
     $scope.contacts=[
-        {name:'facebook',link:'#', color:''},
+        {name:'facebook',link:'#', color:'##3B5998'},
         {name:'whatsapp',link:'#', color:''},
         {name:'linkedin',link:'#', color:''},
         {name:'github',link:'#', color:''},
