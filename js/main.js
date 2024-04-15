@@ -16,16 +16,20 @@ app.controller("myCTR",function ($scope) {
         {name:'my_page'},{name:'tamplate1'}]
 
     $scope.contacts=[
-        {name:'facebook',link:'#', color:'#3B5998'},
-        {name:'whatsapp',link:'#', color:'#2ebd59'},
-        {name:'linkedin',link:'#', color:'#0077B5'},
-        {name:'github',link:'#', color:'#4183C4'},
+        {name:'facebook',link:'https://www.facebook.com/hassun2000?mibextid=ZbWKwL', color:'#3B5998'},
+        {name:'whatsapp',link:'https://api.whatsapp.com/send/?phone=01271247621&text&type=phone_number&app_absent=0', color:'#2ebd59'},
+        {name:'linkedin',link:'https://www.linkedin.com/in/hassun-mohsyn-b1954924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', color:'#0077B5'},
+        {name:'github',link:'https://github.com/HassunMohsyn', color:'#4183C4'},
     ]
 })
-let ContactBTN = document.querySelector(".contact div a");
 
-ContactBTN.addEventListener('hover',(e)=>{
-    e.style.background = `$scope.contacts.color`
+let PopUpBTN = document.querySelectorAll(".projects .project .over_lay .fa-circle-plus");
+
+PopUpBTN.forEach( (pop) => {
+    pop.addEventListener("click", (e) =>{
+        let popUp =document.querySelector(".projects .pop-up");
+        popUp.style.display = "block";
+    })
 })
 
 // auto typed

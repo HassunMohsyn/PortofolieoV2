@@ -15,10 +15,10 @@
     <header>
         <h2 class="logo"><p>B<span>B</span></p>BlackBear</h2>
         <ul>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Skills</li></a>
-            <a href="#"><li>Projects</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
         </ul>
         <div class="menu_icon"><i class="fa-solid fa-bars"></i></div>
     </header>
@@ -34,7 +34,7 @@
     </div>
         <div class="information" id="info">
             <div class="container">
-                <h1 class="title">A Little Information for me</h1>
+                <h1 class="title">A Little Information about me</h1>
                 <div class="content">
                 <div class="image">
                         <img src="images/me.jpg" alt="">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="Skills">
+        <div class="Skills" id="skills">
             <h1 class="title">Skills</h1>
             <div class="container">
                 <div class="skill" ng-repeat = "skill in skills">
@@ -56,8 +56,22 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
-            <!-- <div class="pop-up"></div> -->
+        <div class="projects" id="projects">
+            <div class="pop-up">
+                <div class="popUp-Gallery">
+                    <div class="gallery">
+                        <img src="" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor quisquam repudiandae ad consequuntur minus iste repellendus aliquid minima neque, at temporibus. Eum doloremque iure, ea ducimus dignissimos accusamus temporibus.
+                    </p>
+                    <div class="buttons">
+                        <a href="" class="WepBTN">visit a WebSite</a>
+                        <a href="" class="RepoBTN">Show Repository</a>
+                    </div>
+                </div>
+                <div class="close_pop">X</div>
+            </div>
             <div class="container">
                 <div class="project" ng-repeat="project in projects">
                     <div class="over_lay">
@@ -68,12 +82,12 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div>
-                <a href="{{contact.link}}" ng-repeat="contact in contacts"><i class="fa-brands fa-{{contact.name}}"></i></a>
+                <a href="{{contact.link}}" ng-repeat="contact in contacts" target="_blank"><i class="fa-brands fa-{{contact.name}}"></i></a>
             </div>
             <img src="/PortofolieoV2/images/rocket12.png">
-            <div class="text_roket">
+            <div class="text_roket" id="#about">
                 <p>go to top</p>
             </div>
             <p class="copy"><i class="fa-regular fa-copyright"></i> Hassun Mohsyn 2024</p>
