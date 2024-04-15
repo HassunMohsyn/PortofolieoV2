@@ -11,7 +11,6 @@
 
 
 body {
-    background: #222;
     background: url(/PortofolieoV2/images/mountain-dusk.jpg);
     background-size: cover;
     width: 100%;
@@ -35,7 +34,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* font-weight: 3; */
     color: #fff;
     z-index: 5;
     transition: 0.8s ease-in-out;
@@ -53,10 +51,7 @@ header h2 p,ul a {
     transition: 0.8s;
     font-weight: 250;
 }
-header h2 p span {
-    /* font-weight: 400; */
-    /* color: #d3d3d3; */
-}
+
 header ul a:hover {
     background: #222;
 }
@@ -152,7 +147,6 @@ header .menu_icon {
     flex-wrap: wrap;
     animation: animate 1s both;
     animation-delay: 0.5s;
-    /* width: 900px; */
 }
 
 .information .text h2 {
@@ -162,7 +156,6 @@ header .menu_icon {
 .information .text p {
     font-size: 20px;
     padding-bottom: 15px ;
-    /* width: 600px; */
     text-align: center;
 }
 .information .text p span {
@@ -197,6 +190,55 @@ header .menu_icon {
     width: 100%;
     padding-top: 50px;
 }
+
+
+
+/* tesssssssssssssssssssssssst */
+
+
+  .popup_gallery {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .popup_img {
+    position: fixed;
+    background-color: var(--back-color);
+    z-index: 1001;
+    border: 3px solid #eee;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .popup_img img {
+    max-width: 100%;
+  }
+  .close_popup {
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    top: -15px;
+    right: -15px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+/* tesssssssssssssssssssssssst */
+
 .projects .pop-up {
     position: fixed;
     top: 0;
@@ -333,7 +375,7 @@ header .menu_icon {
     margin: 10px 0;
     cursor: pointer;
 }
-.contact img:hover.text_roket {
+.contact .roket_img:hover.text_roket p {
     opacity: 1;
     color: #ff0000;
 } 
@@ -343,12 +385,5 @@ header .menu_icon {
 }
 .contact p.copy {
     color: #fff;
-    /* position: absolute; */
-    /* bottom: 3px; */
     font-weight: 100;
-}
-.contact p.copy span {
-    border-radius: 50%;
-    border: 1px solid #fff;
-    padding: 5px;
 }

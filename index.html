@@ -57,7 +57,12 @@
             </div>
         </div>
         <div class="projects" id="projects">
-            <div class="pop-up">
+            <div class="popup_gallery"></div>
+            <div class="popup_img">
+                <img src="" alt="">
+                <span class="close_popup">X</span>
+            </div>
+            <!-- <div class="pop-up">
                 <div class="popUp-Gallery">
                     <div class="gallery">
                         <img src="" alt="">
@@ -71,7 +76,7 @@
                     </div>
                 </div>
                 <div class="close_pop">X</div>
-            </div>
+            </div> -->
             <div class="container">
                 <div class="project" ng-repeat="project in projects">
                     <div class="over_lay">
@@ -86,9 +91,11 @@
             <div>
                 <a href="{{contact.link}}" ng-repeat="contact in contacts" target="_blank"><i class="fa-brands fa-{{contact.name}}"></i></a>
             </div>
-            <img src="/PortofolieoV2/images/rocket12.png">
-            <div class="text_roket" id="#about">
-                <p>go to top</p>
+            <a href="#about" class="roket_img">
+                <img src="/PortofolieoV2/images/rocket12.png" id="about">
+            </a>
+            <div class="text_roket">
+                <p>Go Top</p>
             </div>
             <p class="copy"><i class="fa-regular fa-copyright"></i> Hassun Mohsyn 2024</p>
         </div>

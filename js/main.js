@@ -5,7 +5,8 @@ app.controller("myCTR",function ($scope) {
         {name:'html5', color:'#e44d26'},
         {name:'css3', color:'#379ad6'},
         {name:'js' , color:'#f7df1e'},
-        {name:'python' , color:'#225866'}
+        {name:'python' , color:'#225866'},
+        {name:'angular' , color:'#af2c2f'}
         ];
     
     $scope.projects=[
@@ -32,6 +33,28 @@ PopUpBTN.forEach( (pop) => {
     })
 })
 
+let PlusBTN = document.querySelectorAll(".projects .project i");
+
+PlusBTN.forEach((imge) => {
+  imge.addEventListener("click", (e) => {
+    let overlay = document.querySelector(".popup_gallery");
+    overlay.style.display = "block";
+
+    document.querySelector(".popup_img img").src = imge.src;
+    document.querySelector(".popup_img").style.display = "block";
+  });
+});
+document.querySelector(".close_popup").onclick = function () {
+  document.querySelector(".popup_img").style.display = "none";
+
+  document.querySelector(".popup_gallery").style.display = "none";
+};
+document.querySelector(".popup_gallery").onclick = function () {
+  document.querySelector(".popup_img").style.display = "none";
+
+  document.querySelector(".popup_gallery").style.display = "none";
+};
+
 // auto typed
 
 var typed = new Typed(".auto-type",{
@@ -47,12 +70,12 @@ menu_BTN.onclick = function () {
     document.querySelector("header ul").classList.toggle("in");
 }
 
-if (document.querySelector(".about").style.top === "0") {
-    document.querySelector("header").style.background = "transparent";
-}else{
-    document.querySelector("header").style.background = "#111";
+// if (document.querySelector(".about").style.top === "0") {
+//     document.querySelector("header").style.background = "transparent";
+// }else{
+//     document.querySelector("header").style.background = "#111";
 
-}
+// }
 
 console.log(document.querySelector(".information").style.top)
 

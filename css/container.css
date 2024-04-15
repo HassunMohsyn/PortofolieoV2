@@ -38,9 +38,9 @@
 @media (max-width:765px) {
     header {
         background: #111;
+        position: fixed;
         transition: 0.8s ease-in-out;
-        position: relative;
-        z-index: 3;
+        z-index: 30;
     }
     
     header .menu_icon {
