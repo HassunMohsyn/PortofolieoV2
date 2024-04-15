@@ -151,7 +151,8 @@ header .menu_icon {
 
 .information .text h2 {
     font-size: 30px;
-    font-weight: 350;
+    font-weight: 350; 
+    text-align: center;
 }
 .information .text p {
     font-size: 20px;
