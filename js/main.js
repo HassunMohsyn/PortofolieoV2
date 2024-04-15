@@ -18,7 +18,7 @@ app.controller("myCTR",function ($scope) {
 
     $scope.contacts=[
         {name:'facebook',link:'https://www.facebook.com/hassun2000?mibextid=ZbWKwL', color:'#3B5998'},
-        {name:'whatsapp',link:'https://api.whatsapp.com/send/?phone=01271247621&text&type=phone_number&app_absent=0', color:'#2ebd59'},
+        {name:'whatsapp',link:'https://api.whatsapp.com/send/?phone=0201271247621&text&type=phone_number&app_absent=0', color:'#2ebd59'},
         {name:'linkedin',link:'https://www.linkedin.com/in/hassun-mohsyn-b1954924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', color:'#0077B5'},
         {name:'github',link:'https://github.com/HassunMohsyn', color:'#4183C4'},
     ]
