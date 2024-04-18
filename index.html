@@ -57,12 +57,12 @@
             </div>
         </div>
         <div class="projects" id="projects">
-            <div class="popup_gallery"></div>
+            <!-- <div class="popup_gallery"></div>
             <div class="popup_img">
                 <img src="" alt="">
                 <span class="close_popup">X</span>
-            </div>
-            <!-- <div class="pop-up">
+            </div> -->
+            <div class="pop-up">
                 <div class="popUp-Gallery">
                     <div class="gallery">
                         <img src="" alt="">
@@ -75,13 +75,13 @@
                         <a href="" class="RepoBTN">Show Repository</a>
                     </div>
                 </div>
-                <div class="close_pop">X</div>
-            </div> -->
+                <div class="close_pop"><i class="fa-solid fa-xmark"></i></div>
+            </div>
             <div class="container">
                 <div class="project" ng-repeat="project in projects">
                     <div class="over_lay">
                         <span>{{project.des}}</span>
-                        <i class="fa-solid fa-circle-plus"></i>
+                        <i class="fa-solid fa-circle-plus" ng-click="handleIconClick()"></i>
                     </div>
                     <img src="images/proj/{{project.name}}.PNG" alt="">
                 </div>
@@ -92,7 +92,7 @@
                 <a href="{{contact.link}}" ng-repeat="contact in contacts" target="_blank"><i class="fa-brands fa-{{contact.name}}"></i></a>
             </div>
             <a href="#about" class="roket_img">
-                <img src="/PortofolieoV2/images/rocket12.png" id="about">
+                <img src="/PortofolieoV2/images/rocket12.png">
             </a>
             <div class="text_roket">
                 <p>Go Top</p>

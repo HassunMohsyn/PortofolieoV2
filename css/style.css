@@ -196,7 +196,7 @@ header .menu_icon {
 
 /* tesssssssssssssssssssssssst */
 
-
+/* 
   .popup_gallery {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
@@ -235,7 +235,7 @@ header .menu_icon {
     position: absolute;
     text-align: center;
     cursor: pointer;
-  }
+  } */
 
 
 /* tesssssssssssssssssssssssst */
@@ -292,11 +292,23 @@ header .menu_icon {
     padding: 10px;
     border-radius: 5px;
 }
-.popUp-Gallery .popUp-Gallery .close_pop {
-    position: a;
-    top: 10px;
-    left: 1000px;
-    color: #111;
+.pop-up .close_pop {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee3b;
+    border-radius: 50%;
+}
+.pop-up .close_pop:hover {
+    background-color: #111;
 }
 .projects .container {
     gap: 15px;
@@ -367,10 +379,9 @@ header .menu_icon {
     margin: 0 10PX;
     text-align: center;
     border-radius: 5px;
-    /* background-color:{{}} */
 }
 .contact div a:hover {
-    /* background-color: {{$scope.contact.color}}; */
+
 }
 .contact img {
     margin: 10px 0;
