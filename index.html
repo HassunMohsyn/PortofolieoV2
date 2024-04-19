@@ -62,25 +62,26 @@
                 <img src="" alt="">
                 <span class="close_popup">X</span>
             </div> -->
-            <div class="pop-up">
-                <div class="popUp-Gallery">
-                    <div class="gallery">
-                        <img src="" alt="">
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor quisquam repudiandae ad consequuntur minus iste repellendus aliquid minima neque, at temporibus. Eum doloremque iure, ea ducimus dignissimos accusamus temporibus.
-                    </p>
-                    <div class="buttons">
-                        <a href="" class="WepBTN">visit a WebSite</a>
-                        <a href="" class="RepoBTN">Show Repository</a>
-                    </div>
-                </div>
-                <div class="close_pop"><i class="fa-solid fa-xmark"></i></div>
-            </div>
+            
             <div class="container">
                 <div class="project" ng-repeat="project in projects">
+                    <div class="pop-up">
+                        <div class="popUp-Gallery">
+                            <div class="gallery">
+                                <img src="" alt="">
+                            </div>
+                            <p>
+                                {{project.des.content}}
+                            </p>
+                            <div class="buttons">
+                                <a href="{{project.popUp.Web}}" class="WepBTN">visit a WebSite</a>
+                                <a href="{{project.popUp.Repo}}" class="RepoBTN">Show Repository</a>
+                            </div>
+                        </div>
+                        <div class="close_pop"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
                     <div class="over_lay">
-                        <span>{{project.des}}</span>
+                        <span>{{project.des.title}}</span>
                         <i class="fa-solid fa-circle-plus" ng-click="handleIconClick()"></i>
                     </div>
                     <img src="images/proj/{{project.name}}.PNG" alt="">

@@ -260,14 +260,14 @@ header .menu_icon {
     transform: translate(-50%,-50%);
     padding: 10px;
 }
-.projects .pop-up .popUp-Gallery .gallery {
+.pop-up .popUp-Gallery .gallery {
     width: 100%;
     /* margin: 10px; */
     background-color: #eee;
     height: 50%;
     overflow: hidden;
 }
-.projects .pop-up .popUp-Gallery .gallery img {
+.pop-up .popUp-Gallery .gallery img {
     width: 100%;
 }
 .projects .pop-up .popUp-Gallery p {
